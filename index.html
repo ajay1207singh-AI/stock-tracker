@@ -25,7 +25,7 @@ tr[data-v=buy] td:first-child{border-left:5px solid #2e9e4f}tr[data-v=watch] td:
 ul{margin:4px 0;padding-left:20px}li{margin:3px 0}#mode{font-size:12px;color:#1f3864;font-weight:600}
 @media(max-width:800px){.wrap{padding:10px}.card{min-width:40%}.card .k{font-size:22px}td,th{padding:6px;font-size:12px}.pills .lab{width:100%}td:nth-child(9),th:nth-child(9),td:nth-child(11),th:nth-child(11){display:none}}
 </style></head><body>
-<header><h1>Stock Tracker – Scorecard</h1><p><b>Last updated 19 Oct 2026 12:20 IST</b> · 55 calls on @advancedlevelinvestment picks + the 16 Oct semiconductor report · Prices: Screener.in</p></header>
+<header><h1>Stock Tracker – Scorecard</h1><p><b>Last updated 19 Oct 2026 12:20 IST</b> · 55 calls on @advancedlevelinvestment picks + the 16 Oct semiconductor report · Prices: Screener.in · <a href="portfolio/" style="color:#fff;font-weight:600">My Portfolio (locked)</a> · <a href="#learn" style="color:#fff">How this learns</a></p></header>
 <div class="wrap">
 <div class="ctlbox">
 <div class="pills" id="agep"><span class="lab">Call age</span></div>
@@ -46,6 +46,16 @@ ul{margin:4px 0;padding-left:20px}li{margin:3px 0}#mode{font-size:12px;color:#1f
 <div class="box"><h2>Lessons (auto)</h2><ul id="les"></ul><div class="sub">“Fell or lagged” = return &lt; 0 or behind its index. Patterns firm up after 30+ days.</div></div>
 </div>
 <div class="box"><h2>Trend – net opportunity (₹, all calls)</h2><svg viewBox="0 0 640 170" width="100%" style="max-width:720px;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Net opportunity trend"><line x1="34" x2="606" y1="135.6" y2="135.6" stroke="#bbb" stroke-dasharray="4"/><polyline fill="none" stroke="#1f6feb" stroke-width="2.5" points="34.0,136.0 320.0,116.3 606.0,34.0"/><circle cx="34.0" cy="136.0" r="3.5" fill="#1f6feb"><title>2026-10-15: ₹-25 (19 calls)</title></circle><text x="34.0" y="160" font-size="10" text-anchor="middle" fill="#6b7385">10-15</text><text x="34.0" y="128.0" font-size="10" text-anchor="middle" fill="#1d2433">−₹25</text><circle cx="320.0" cy="116.3" r="3.5" fill="#1f6feb"><title>2026-10-16: ₹+1,297 (51 calls)</title></circle><text x="320.0" y="160" font-size="10" text-anchor="middle" fill="#6b7385">10-16</text><text x="320.0" y="108.3" font-size="10" text-anchor="middle" fill="#1d2433">+₹1,297</text><circle cx="606.0" cy="34.0" r="3.5" fill="#1f6feb"><title>2026-10-19: ₹+6,811 (53 calls)</title></circle><text x="606.0" y="160" font-size="10" text-anchor="middle" fill="#6b7385">10-19</text><text x="606.0" y="26.0" font-size="10" text-anchor="middle" fill="#1d2433">+₹6,811</text></svg></div>
+<div class="box" id="learn"><h2>How this learns</h2>
+<p><b>This is a transparent, rules-based scorecard. It is not a prediction model.</b> It does not forecast prices or train on data. It writes down each call, checks it against the market using fixed rules, and keeps a record of which kinds of call worked.</p>
+<ul>
+<li><b>Scoring rule.</b> Buy is right if it beats its benchmark by ≥5 percentage points and wrong if it lags by ≥5; anything in between is “in line”. Avoid is the mirror image: right if the stock lags by ≥5 pts. Watchlist is never right or wrong. It is marked “waiting paid” if the price fell, “ran away” if it rose ≥5%, or “triggered” if the entry level was hit.</li>
+<li><b>Benchmarks.</b> Nifty 50 for companies with a market cap of ₹1 lakh Cr or more, otherwise the Nifty Smallcap 250. Both are measured from the same reference date as the call.</li>
+<li><b>Money view.</b> Each call is worth ₹10,000 notional. Buy counts the gain or loss. Avoid counts the loss avoided or gain missed. Watchlist counts the money saved by waiting or the move missed.</li>
+<li><b>Maturity.</b> A call under 30 days old shows “Too early” and is left out of the hit rate (a provisional figure is shown separately). After that, returns are frozen at fixed horizons: +1D, +1W, +1M, +3M, +6M, +1Y, +2Y and +3Y. Each horizon uses the first close on or after the call date plus that many days, taken from the daily price history (history.csv). A horizon shows n/a until it is reached.</li>
+<li><b>Sample size today.</b> 55 calls (Buy/Apply 3, Watchlist 22, Avoid 30). 0 have matured past 30 days. Horizon data available so far: +1D 48, +1W 0, +1M 0, +3M 0, +6M 0, +1Y 0, +2Y 0, +3Y 0.</li>
+<li><b>Lessons and confidence.</b> A lesson is a pattern across a group of at least 2 calls, such as “Avoided penny stocks: 5/6 fell or lagged”. Each lesson has a confidence level based on how many calls in its group have matured: <i>Very low</i> (none), <i>Low</i> (1–4), <i>Medium</i> (5–14) or <i>High</i> (15+). Every update rewrites <a href="lessons.md">lessons.md</a>. When new data flips a lesson (for example, a hit ratio crosses 50%), the old wording is kept in a revision log with the date, so mistakes stay visible.</li>
+</ul><div class="sub">Not investment advice. Past hit rates, especially on small and immature samples, say little about future calls.</div></div>
 <div class="cards">
 <div class="card buy c" onclick="setV('buy')"><div>Buy / Apply</div><div class="k" id="c_b"></div></div>
 <div class="card watch c" onclick="setV('watch')"><div>Watchlist</div><div class="k" id="c_wl"></div></div>
@@ -98,13 +108,14 @@ function score(rows){
   const li=a=>a.map(r=>{const x=M(r);return `<li>${esc(r.c)} <span class="sub">(${esc(r.v)}, ${x.ret>=0?'+':''}${x.ret.toFixed(1)}%)</span> ${rs(x.opp)}</li>`;}).join('')||'<li class="sub">No data for this selection</li>';
   document.getElementById('best').innerHTML=li(S.filter(r=>M(r).opp>0).slice(0,3));document.getElementById('worst').innerHTML=li(S.filter(r=>M(r).opp<0).slice(-3).reverse());
   // lessons
+  const CF=a=>{const m=a.filter(r=>(r.days??0)>=CFG.mature).length;const lv=m===0?'Very low':m<5?'Low':m<15?'Medium':'High';return ` [confidence: ${lv} · n=${a.length}, ${m} matured ≥${CFG.mature}d]`;};
   const L=[],av=rows.filter(r=>r.v==='Avoid'&&M(r).ret!=null);const G={};av.forEach(r=>r.grp.forEach(g=>(G[g]=G[g]||[]).push(r)));
-  Object.entries(G).forEach(([g,a])=>{if(a.length<2)return;const k=a.filter(r=>{const x=M(r);return x.ret<0||(x.alpha??0)<0;}).length;L.push([k/a.length,`Avoided ${g}: ${k}/${a.length} fell or lagged the index`]);});
-  const wl=rows.filter(r=>r.v==='Watchlist'&&M(r).ret!=null);if(wl.length){const k=wl.filter(r=>M(r).ret<0).length;L.push([k/wl.length,`Watchlist: ${k}/${wl.length} have fallen since the call, so waiting has paid so far`]);}
-  const pl=rows.filter(r=>r.v==='Watchlist'&&r.lvl&&r.L.lp);if(pl.length&&HZ==='L'){const far=pl.filter(r=>!r.hit).map(r=>(r.L.lp/r.lvl-1)*100).sort((a,b)=>a-b);L.push([0,`Price-level triggers not hit: ${far.length}/${pl.length}`+(far.length?`; median gap to entry ${Math.round(far[Math.floor(far.length/2)])}%`:'')]);}
-  const bu=rows.filter(r=>['Buy','Apply (IPO)'].includes(r.v)&&M(r).alpha!=null);if(bu.length){const k=bu.filter(r=>M(r).alpha>0).length;L.push([k/bu.length,`Buys: ${k}/${bu.length} are beating their index`]);}
-  const up=av.filter(r=>M(r).ret>=CFG.T);if(up.length)L.push([0,`Avoids that rallied ≥${CFG.T}%: `+up.map(r=>`${r.c} (+${M(r).ret.toFixed(1)}%)`).join(', ')]);
-  document.getElementById('les').innerHTML=L.sort((a,b)=>b[0]-a[0]).map(x=>`<li>${esc(x[1])}</li>`).join('')||'<li class="sub">Not enough data for this selection yet.</li>';}
+  Object.entries(G).forEach(([g,a])=>{if(a.length<2)return;const k=a.filter(r=>{const x=M(r);return x.ret<0||(x.alpha??0)<0;}).length;L.push([k/a.length,`Avoided ${g}: ${k}/${a.length} fell or lagged the index`,CF(a)]);});
+  const wl=rows.filter(r=>r.v==='Watchlist'&&M(r).ret!=null);if(wl.length){const k=wl.filter(r=>M(r).ret<0).length;L.push([k/wl.length,`Watchlist: ${k}/${wl.length} have fallen since the call, so waiting has paid so far`,CF(wl)]);}
+  const pl=rows.filter(r=>r.v==='Watchlist'&&r.lvl&&r.L.lp);if(pl.length&&HZ==='L'){const far=pl.filter(r=>!r.hit).map(r=>(r.L.lp/r.lvl-1)*100).sort((a,b)=>a-b);L.push([0,`Price-level triggers not hit: ${far.length}/${pl.length}`+(far.length?`; median gap to entry ${Math.round(far[Math.floor(far.length/2)])}%`:''),CF(pl)]);}
+  const bu=rows.filter(r=>['Buy','Apply (IPO)'].includes(r.v)&&M(r).alpha!=null);if(bu.length){const k=bu.filter(r=>M(r).alpha>0).length;L.push([k/bu.length,`Buys: ${k}/${bu.length} are beating their index`,CF(bu)]);}
+  const up=av.filter(r=>M(r).ret>=CFG.T);if(up.length)L.push([0,`Avoids that rallied ≥${CFG.T}%: `+up.map(r=>`${r.c} (+${M(r).ret.toFixed(1)}%)`).join(', '),CF(up)]);
+  document.getElementById('les').innerHTML=L.sort((a,b)=>b[0]-a[0]).map(x=>`<li>${esc(x[1])}<span class="sub">${esc(x[2]||'')}</span></li>`).join('')||'<li class="sub">Not enough data for this selection yet.</li>';}
 function setV(v){document.getElementById('v').value=v;render();}
 function render(){
   pills();const pool=D.filter(r=>inAge(r,AGE));score(pool);

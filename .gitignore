@@ -1,0 +1,10 @@
+# never publish raw data
+*.csv
+*.json
+*.xlsx
+*.pdf
+*.txt
+plain*.html
+.staticrypt.json
+portfolio/*
+!portfolio/index.html
