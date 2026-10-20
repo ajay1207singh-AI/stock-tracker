@@ -8,3 +8,4 @@ plain*.html
 .staticrypt.json
 portfolio/*
 !portfolio/index.html
+!portfolio/ver.html
