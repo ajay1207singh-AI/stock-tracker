@@ -6,13 +6,15 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Watchlist: 35/39 have fallen since the call | yes | Very low | 0 / 39 | 2026-10-19 |
-| Avoided YouTuber daily-video tips: 21/29 fell or lagged the index | yes | Very low | 0 / 29 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 9/13 fell or lagged the index | yes | Very low | 0 / 13 | 2026-10-19 |
-| Avoided semiconductor-theme names: 11/12 fell or lagged the index | yes | Very low | 0 / 12 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 28/42 fell or lagged the index | yes | Very low | 0 / 42 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 16/21 fell or lagged the index | yes | Very low | 0 / 21 | 2026-10-19 |
+| Avoided semiconductor-theme names: 14/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
+| Buys: 7/17 are beating their index | no | Very low | 0 / 17 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 5/7 fell or lagged the index | yes | Very low | 0 / 7 | 2026-10-19 |
-| Buys: 2/2 are beating their index | yes | Very low | 0 / 2 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 5/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
+| Avoided large caps (≥ ₹1 lakh Cr): 3/4 fell or lagged the index | yes | Very low | 0 / 4 | 2026-10-21 |
+| Avoided SME / illiquid names: 0/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
+| Watchlist: 2/3 have fallen since the call | yes | Very low | 0 / 3 | 2026-10-19 |
 
 ## Revision log (lessons the data contradicted)
 
@@ -25,6 +27,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-21: **avoid:penny stocks (< ₹100)** – was “Avoided penny stocks (< ₹100): 3/8 fell or lagged the index (pattern did not hold)”, now “Avoided penny stocks (< ₹100): 6/8 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-10-21: **avoid:YouTuber daily-video tips** – was “Avoided YouTuber daily-video tips: 5/29 fell or lagged the index (pattern did not hold)”, now “Avoided YouTuber daily-video tips: 22/29 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-10-21: **watch:waiting** – was “Watchlist: 19/39 have fallen since the call (pattern did not hold)”, now “Watchlist: 37/39 have fallen since the call (pattern holds)” (confidence Very low)
+- 2026-10-21: **buy:beat** – was “Buys: 2/2 are beating their index (pattern held)”, now “Buys: 7/17 are beating their index (pattern does not hold)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
@@ -34,3 +37,13 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - **2026-10-21 – 'I called it years ago' clips are marketing, not picks.** Evidence: 3 of the 4 Advanced Level Investment videos of 20 Oct were course promotions built on past winners (HFCL from 5 years ago, Vandana Knitwear/ATVO at ₹0.46, Zen Tech, Jindal Photo, Shri Adhikari Brothers); one (SpaceX share giveaway) had no investable Indian pick. The video's HFCL figures were wrong (said sales ₹1,000→₹500 Cr and profit ₹68→₹368 Cr; filings show ₹1,043→₹2,542 Cr and ₹72→₹394 Cr). Sample: 4 videos, 1 day. How it changes calls: companies shown only as past wins are logged as Avoid unless today's numbers pass the usual tests (applied to ATVO); every figure in a video is checked against the exchange filing before use.
 - **2026-10-21 – Avoids that rallied, update.** Evidence: HFCL (+10%, Avoid 15 Oct) now has fundamental support (Q2 FY27 revenue +144%, profit 5.5x, guidance raised), so its rally is not just noise. Still 1 name, under a week old. How it changes calls: no rule change; Avoids that were 'too big / too expensive for 500%' now get a named revisit trigger (for HFCL: positive H1 operating cash flow and debtor days < 120) so a fundamental change is checked, not ignored.
 - **2026-10-21 – Per-channel read (very low confidence, all calls ≤ 6 days old).** Advanced Level Investment: Watchlist names average −1.3 pts vs their index (n=26; 13 below), Avoids +0.7 pts (n=25; 8 fell or lagged). Sumit Research: n=18, all 1 day old, about flat. Own research: Watchlist −3.3 pts (n=6). No channel can be ranked yet; recheck when the first calls pass 30 days (from 14 Nov 2026).
+- **2026-10-21 – Framework v2: decisive verdicts (supersedes the "patient Watchlist" lesson of 20 Oct).** Owner feedback: almost everything was Watchlist, which is not actionable. All 92 listed picks were re-rated on 21 Oct 2026 with the rules below (code: `rerate/engine.py` + `rerate/finalize.py`, output `rerate/final.json`). **Every new pick from either channel must use this framework:**
+  1. **Data (fresh, verified, never estimated):** Screener page for the stock (`rerate/scrape.py` / `metrics.py`): CMP, m-cap, 3y sales & profit CAGR, latest-quarter YoY sales/profit, ROCE (ROE for lenders/brokers), D/E (latest balance sheet), 3y CFO ÷ 3y net profit, promoter % and 1-yr change, pledge (only if Screener flags it), P/E and PEG (P/E ÷ median of 3y profit CAGR, TTM growth and latest-quarter growth, capped at 40%). Plus a web check for news: results date, order book, fundraises/acquisitions, management exits, regulatory issues. Unknowns are shown as "n/a", never filled in.
+  2. **Hard gates → Avoid:** loss-making; P/E > 150; m-cap < ₹300 Cr; pledge ≥ 20%; D/E > 1.5 (non-lenders); negative 3y operating cash flow; promoter < 15%; ROCE/ROE < 8%.
+  3. **Score:** 10 weighted factors (return on capital 1.5, PEG 1.5, 3y profit 1.2, latest quarter 1.2, cash conversion 1.0, promoter/pledge 1.0, 3y sales 0.8, D/E 0.8, size 0.6, 1y price 0.5), each −1…+1 → Q = 50 + 50 × weighted mean.
+  4. **Verdict:** Strong Buy = Q ≥ 72, PEG ≤ 1.3, m-cap ≥ ₹1,500 Cr, latest-quarter profit not falling, CFO/PAT ≥ 0.6, promoter ≥ 35%, base upside ≥ 18%. Buy = Q ≥ 62, PEG ≤ 2.0 (staggered over 4–6 weeks). Buy on dip = Q ≥ 54, PEG ≤ 2.6 or a Buy with a weak quarter/cash conversion; the entry price must be within 10% of CMP (else Avoid). Any buy verdict whose base target is < 8% above entry is cut a level. Watchlist ONLY with a dated catalyst (e.g. "Q2 FY27 results 28 Oct 2026"), and Watchlist must stay ≤ ~15% of all picks. Everything else = Avoid.
+  5. **Targets (12–18 m):** EPS grown at g (capped 25%) for 15 months × fair P/E = min(current P/E, max(18, 1.5 × g, 22 if ROCE ≥ 25%)). Bull = growth × 1.3 at today's P/E; bear = growth × 0.3 at 75% of fair P/E.
+  6. **Confidence 0–100:** 50% how far the score is past its verdict threshold (or how many gates were hit, for Avoid) + 30% share of factor weight pointing the same way + 20% data coverage; −5 if a rule downgraded it; manual news overrides move it ±3–10 and are written into the thesis. Capped 30–92.
+  7. **Size (% of a ~₹12L portfolio) and stop:** Strong Buy up to 5% (≥ ₹20,000 Cr m-cap), 3% (₹5,000–20,000 Cr), 2% (< ₹5,000 Cr); Buy ≤ 3 / 2.5 / 2%; Buy on dip ≤ 2 / 1.5%. Stop-loss 15% below entry for large/mid caps, 20% for small caps; any broken gate = exit.
+  8. **Morning update:** state verdict, confidence, entry, base target and size for every new pick, and refresh the Top 5 block if a new pick outranks one (rank = confidence × capped base upside, Strong Buy +15%). Re-run `python3 rerate/finalize.py` after results season or every month; it rebuilds from the backup snapshot, so update `finalize.py` to read the live `tracker.csv` once new picks are added.
+  Result on 21 Oct 2026: 4 Strong Buy, 9 Buy, 4 Buy on dip, 3 Watchlist, 72 Avoid (+1 IPO). The Avoid share is high because many channel picks are expensive (P/E > 60 with PEG > 2.6) or fail the cash-flow test. Judge this framework on 30/90-day alpha from 20 Nov 2026.
