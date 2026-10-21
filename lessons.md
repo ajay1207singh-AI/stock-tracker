@@ -6,15 +6,15 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 28/42 fell or lagged the index | yes | Very low | 0 / 42 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 16/21 fell or lagged the index | yes | Very low | 0 / 21 | 2026-10-19 |
-| Avoided semiconductor-theme names: 14/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Buys: 7/17 are beating their index | no | Very low | 0 / 17 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 19/42 fell or lagged the index | no | Very low | 0 / 42 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 9/21 fell or lagged the index | no | Very low | 0 / 21 | 2026-10-19 |
+| Buys: 1/19 are beating their index | no | Very low | 0 / 19 | 2026-10-19 |
+| Avoided semiconductor-theme names: 8/17 fell or lagged the index | no | Very low | 0 / 17 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 5/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
-| Avoided large caps (≥ ₹1 lakh Cr): 3/4 fell or lagged the index | yes | Very low | 0 / 4 | 2026-10-21 |
+| Avoided large caps (≥ ₹1 lakh Cr): 1/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
+| Watchlist: 2/4 have fallen since the call | no | Very low | 0 / 4 | 2026-10-19 |
 | Avoided SME / illiquid names: 0/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
-| Watchlist: 2/3 have fallen since the call | yes | Very low | 0 / 3 | 2026-10-19 |
 
 ## Revision log (lessons the data contradicted)
 
@@ -28,6 +28,11 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-21: **avoid:YouTuber daily-video tips** – was “Avoided YouTuber daily-video tips: 5/29 fell or lagged the index (pattern did not hold)”, now “Avoided YouTuber daily-video tips: 22/29 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-10-21: **watch:waiting** – was “Watchlist: 19/39 have fallen since the call (pattern did not hold)”, now “Watchlist: 37/39 have fallen since the call (pattern holds)” (confidence Very low)
 - 2026-10-21: **buy:beat** – was “Buys: 2/2 are beating their index (pattern held)”, now “Buys: 7/17 are beating their index (pattern does not hold)” (confidence Very low)
+- 2026-10-21: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 16/21 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 9/21 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-21: **avoid:semiconductor-theme names** – was “Avoided semiconductor-theme names: 14/17 fell or lagged the index (pattern held)”, now “Avoided semiconductor-theme names: 8/17 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-21: **avoid:YouTuber daily-video tips** – was “Avoided YouTuber daily-video tips: 28/42 fell or lagged the index (pattern held)”, now “Avoided YouTuber daily-video tips: 19/42 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-21: **avoid:large caps (≥ ₹1 lakh Cr)** – was “Avoided large caps (≥ ₹1 lakh Cr): 3/4 fell or lagged the index (pattern held)”, now “Avoided large caps (≥ ₹1 lakh Cr): 1/4 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-21: **watch:waiting** – was “Watchlist: 2/3 have fallen since the call (pattern held)”, now “Watchlist: 2/4 have fallen since the call (pattern does not hold)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
@@ -47,3 +52,9 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
   7. **Size (% of a ~₹12L portfolio) and stop:** Strong Buy up to 5% (≥ ₹20,000 Cr m-cap), 3% (₹5,000–20,000 Cr), 2% (< ₹5,000 Cr); Buy ≤ 3 / 2.5 / 2%; Buy on dip ≤ 2 / 1.5%. Stop-loss 15% below entry for large/mid caps, 20% for small caps; any broken gate = exit.
   8. **Morning update:** state verdict, confidence, entry, base target and size for every new pick, and refresh the Top 5 block if a new pick outranks one (rank = confidence × capped base upside, Strong Buy +15%). Re-run `python3 rerate/finalize.py` after results season or every month; it rebuilds from the backup snapshot, so update `finalize.py` to read the live `tracker.csv` once new picks are added.
   Result on 21 Oct 2026: 4 Strong Buy, 9 Buy, 4 Buy on dip, 3 Watchlist, 72 Avoid (+1 IPO). The Avoid share is high because many channel picks are expensive (P/E > 60 with PEG > 2.6) or fail the cash-flow test. Judge this framework on 30/90-day alpha from 20 Nov 2026.
+- **2026-10-21 – Post-mortem of the 3 "worst" Avoids → Framework v3 (earnings momentum + Speculative Buy).** Owner feedback: Samrat Pharmachem (+18.6%), HFCL (+8.7%), Lagnam Spintex (+4.0%) rallied after Avoid. Evidence across all 72 Avoids (all 0–6 days old, so weak evidence): 50 fell, 15 rose, 6 flat; average −1.7% (median −0.7%), average alpha vs index ≈ 0. Avoids flagged with a latest-quarter profit jump ≥ 100% rose 7/19 (37%, avg −0.7%) vs 8/52 (15%, avg −2.0%) for the rest – the one subgroup where Avoid is visibly weaker. Diagnosis: framework v2 had no turnaround/earnings-momentum term, and its hard gates used 3-year history (3y CFO, TTM loss) that a single breakout quarter cannot override. Per stock: HFCL = reasoning too rigid (best-ever Q2: revenue +144%, PAT ₹394 Cr, order book ₹28,911 Cr – real fundamentals); Lagnam = Avoid still right on risk (48% pledge, D/E 2.7, ₹166 Cr m-cap) despite a genuine quarter, 0-day-old call; Samrat = Avoid still right (₹84 Cr nano-cap, ₹0.9 Cr quarterly profit, volume ~9k shares vs ~2.4k average, no news found → thin-float momentum). **Changes (code: rerate/engine.py, finalize.py):**
+  1. New factor **Earnings momentum (turnaround)**, weight 1.0, bonus only: latest-quarter profit YoY ≥ 50% (+0.5), ≥ 100% (+0.5 more), sales ≥ 25% (+0.3) / ≥ 10% (+0.1); ignored when quarterly profit < ₹5 Cr (tiny-base noise) or no turnaround. The existing "Latest quarter" factor still penalises weak quarters, so no double-counting.
+  2. New verdict **Speculative Buy (max 1%)**: gated names whose gates are all *soft* (3y negative CFO, TTM loss, low ROCE) with a fresh quarter (Jun/Sep 2026) of profit ≥ +100%, sales ≥ +25%, quarterly profit ≥ ₹5 Cr and m-cap ≥ ₹300 Cr. *Hard* gates still force Avoid: pledge ≥ 20%, promoter < 15%, P/E > 150, D/E > 1.5. Confidence capped at 55, 1 tranche, 20% hard stop, exit if the next quarter disappoints. Never in Top 5.
+  3. Scorecard best/worst lists now show each call's age, with an "early" badge under 30 days (1–5 day moves labelled as such).
+  Not implemented (data not in the pipeline yet, marked unknown): 3–6 month relative strength vs Nifty Smallcap 250 and delivery-volume %. Add them when a reliable daily source is wired in.
+  Result: HFCL and KRN Heat Exchanger Avoid → Speculative Buy; Rain Industries Avoid → Watchlist (Q2 due by 14 Nov). Samrat and Lagnam stay Avoid. Review: 20 Nov 2026 (30-day mark) – if Speculative Buys lag the index by 5+ pts, tighten the bucket.
