@@ -6,14 +6,14 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 19/42 fell or lagged the index | no | Very low | 0 / 42 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 9/21 fell or lagged the index | no | Very low | 0 / 21 | 2026-10-19 |
-| Buys: 1/19 are beating their index | no | Very low | 0 / 19 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 17/35 fell or lagged the index | no | Very low | 0 / 35 | 2026-10-19 |
+| Buys: 1/26 are beating their index | no | Very low | 0 / 26 | 2026-10-19 |
 | Avoided semiconductor-theme names: 8/17 fell or lagged the index | no | Very low | 0 / 17 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 7/15 fell or lagged the index | no | Very low | 0 / 15 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 5/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
-| Avoided large caps (≥ ₹1 lakh Cr): 1/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
-| Watchlist: 2/4 have fallen since the call | no | Very low | 0 / 4 | 2026-10-19 |
+| Watchlist: 2/5 have fallen since the call | no | Very low | 0 / 5 | 2026-10-19 |
+| Avoided large caps (≥ ₹1 lakh Cr): 1/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
 | Avoided SME / illiquid names: 0/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
 
 ## Revision log (lessons the data contradicted)
@@ -58,3 +58,11 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
   3. Scorecard best/worst lists now show each call's age, with an "early" badge under 30 days (1–5 day moves labelled as such).
   Not implemented (data not in the pipeline yet, marked unknown): 3–6 month relative strength vs Nifty Smallcap 250 and delivery-volume %. Add them when a reliable daily source is wired in.
   Result: HFCL and KRN Heat Exchanger Avoid → Speculative Buy; Rain Industries Avoid → Watchlist (Q2 due by 14 Nov). Samrat and Lagnam stay Avoid. Review: 20 Nov 2026 (30-day mark) – if Speculative Buys lag the index by 5+ pts, tighten the bucket.
+- **2026-10-21 – Framework v4: forward "Future demand & deal flow" pillar for Advanced Level Investment picks (supersedes the v3 note above where they conflict).** Owner insight: the channel picks on *new deals, orders, capacity and fit with a 3–5-year demand wave*, before the numbers show it; v2/v3 were backward-looking (trailing P/E, ROCE, 3y cash flow) and auto-Avoided exactly those names.
+  **Evidence first (21 Oct, all calls 0–6 days old, matured n = 0 → very weak):** his 54 tracked picks are −3.1% on average since the video (median −3.5%; 13 up, 39 down) vs Nifty Smallcap 250 ≈ −3.3% over the same days, i.e. about zero alpha; provisional alpha-hit rate 43% (23/54). Our Avoids of his picks: −3.4% avg (9/42 up); our Buys of his picks: −2.0% avg (2/9 up). So far his picks did **not** beat our Avoids — but 6 days says nothing. Gates that blocked his picks most: negative 3y operating cash flow (12 names, avg −4.5%), low ROCE (11, −3.7%), loss-making (6, −3.3%), nano-cap (6, −2.8%), P/E > 150 (6), pledge (2). Transcripts (yt-dlp Hindi auto-captions, 26 of ~29 videos 14–21 Oct downloaded; 3 key videos read in full, the rest keyword-scanned) show he rarely gives a target or time frame and often says "not a recommendation / not for buying" (e.g. Samrat Pharmachem: "absolutely not for buying, I'm still researching"); HFCL is the exception (₹300–400 in 3–4 years).
+  **Rules (code: rerate/forward.py, ali_thesis.py, finalize.py):**
+  1. Forward score = 0.35 × theme strength (AI data centres 0.9, semis/defence/power T&D 0.85, fuel cells/clean 0.8, EMS 0.8, telecom 0.65, EV/AI software 0.6, infra 0.55, finance 0.45, mature/commodity 0.2) + 0.25 × company fit (share of revenue/orders in the theme) + 0.25 × **verified** deal flow in the last 6–12 m (filings/calls/news; unverified = 0) + 0.15 × execution evidence. Evidence and source are shown in each click-through.
+  2. Verdict from the forward pillar (only lifts, never lowers): score ≥ 0.75 and deal flow ≥ 0.8 → Buy (Speculative Buy if trailing quality score < 50); score ≥ 0.62 and deal flow ≥ 0.5 → Speculative Buy (max 1%); score ≥ 0.65 without verified deals → Watchlist (dated catalyst = Q2 results).
+  3. Trailing fundamentals become a risk/size overlay: P/E > 80 or loss-making, and negative 3y CFO, each cut size by 1 pt (floor 1%) and confidence by 6; forward Buys max 2%, confidence ≤ 70 (Speculative ≤ 60). **Vetoes still force Avoid:** pledge ≥ 20%, promoter < 15%, P/E > 500 on tiny profit (froth/operator sign), nano-cap < ₹300 Cr with no verified deal flow, and governance events (K.P. Energy CEO exit). Where the trailing fair value is below the price, no target is published.
+  4. **Channel-conviction factor:** confidence ± CH_W × 10 × (2 × hit − 1) × conviction, where hit = share of his picks beating their index since the call, conviction = 1 (main pick of a video), 0.5 (one of a list), 0.25 (passing / "not for buying"), and CH_W = 0.2 until 10 of his calls mature, 0.5 at 10–19, 1.0 at 20+. Today hit = 0.43 → ≈ −1 pt for main picks: his record is too young to earn weight, positive or negative.
+  Result: 11 verdicts flipped (see lessons.md / scorecard). Review on 20 Nov 2026: if forward-lifted names lag their index by 5+ pts at 30 days, cut the theme weights; if his matured hit rate > 55%, the conviction weight rises automatically.
