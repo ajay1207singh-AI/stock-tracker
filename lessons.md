@@ -1,18 +1,18 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-10-21. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-10-22. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 17/35 fell or lagged the index | no | Very low | 0 / 35 | 2026-10-19 |
-| Buys: 1/26 are beating their index | no | Very low | 0 / 26 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 17/40 fell or lagged the index | no | Very low | 0 / 40 | 2026-10-19 |
+| Buys: 1/32 are beating their index | no | Very low | 0 / 32 | 2026-10-19 |
 | Avoided semiconductor-theme names: 8/17 fell or lagged the index | no | Very low | 0 / 17 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 7/15 fell or lagged the index | no | Very low | 0 / 15 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 7/16 fell or lagged the index | no | Very low | 0 / 16 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 6/9 fell or lagged the index | yes | Very low | 0 / 9 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 5/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
-| Watchlist: 2/5 have fallen since the call | no | Very low | 0 / 5 | 2026-10-19 |
+| Watchlist: 2/6 have fallen since the call | no | Very low | 0 / 6 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 1/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
 | Avoided SME / illiquid names: 0/3 fell or lagged the index | no | Very low | 0 / 3 | 2026-10-21 |
 
@@ -66,3 +66,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
   3. Trailing fundamentals become a risk/size overlay: P/E > 80 or loss-making, and negative 3y CFO, each cut size by 1 pt (floor 1%) and confidence by 6; forward Buys max 2%, confidence ≤ 70 (Speculative ≤ 60). **Vetoes still force Avoid:** pledge ≥ 20%, promoter < 15%, P/E > 500 on tiny profit (froth/operator sign), nano-cap < ₹300 Cr with no verified deal flow, and governance events (K.P. Energy CEO exit). Where the trailing fair value is below the price, no target is published.
   4. **Channel-conviction factor:** confidence ± CH_W × 10 × (2 × hit − 1) × conviction, where hit = share of his picks beating their index since the call, conviction = 1 (main pick of a video), 0.5 (one of a list), 0.25 (passing / "not for buying"), and CH_W = 0.2 until 10 of his calls mature, 0.5 at 10–19, 1.0 at 20+. Today hit = 0.43 → ≈ −1 pt for main picks: his record is too young to earn weight, positive or negative.
   Result: 11 verdicts flipped (see lessons.md / scorecard). Review on 20 Nov 2026: if forward-lifted names lag their index by 5+ pts at 30 days, cut the theme weights; if his matured hit rate > 55%, the conviction weight rises automatically.
+- **2026-10-22 – Speculative Buys whose trailing base target sits below the price.** Evidence: Tatva Chintan (new, base ₹1,354 vs CMP ₹1,890) and KRN Heat Exchanger (base ₹733 vs ₹1,055, rated 21 Oct) – 2 of 7 Speculative Buys publish a "target" below the price, because the fair P/E is capped when 3y ROCE is low, which contradicts the momentum thesis. Sample 2, 0–1 day old. How it changes calls: for a Speculative Buy, when the trailing base is below the price, the base is recomputed from run-rate EPS (latest quarter × 4, grown ≤ 25% for 15 months, at ≤ 45x); if that is still < 8% above entry, the verdict is Avoid. Applied to Tatva (base ₹2,050, conf 55 → 50). KRN to be recomputed at the next re-rate (Q2 results).
+- **2026-10-22 – Advanced Level Investment "market-dip" lists now lean large cap.** Evidence: of 12 new names from his 21 Oct videos, 4 are ≥ ₹30,000 Cr (Groww, Bajaj Finance, Narayana, Godrej Industries) and 3 are cable names mentioned only in passing. Quality + valuation passed for Groww (ROE 29%, PEG 1.1) and Bajaj Finance (ROE 18%, PEG 1.3) → Buy at 3% (large-cap cap), not 5%; Narayana (PEG 4.5) and Godrej Industries (PEG 5.5) → Avoid. How it changes calls: large-cap dip names are judged vs the Nifty 50, sized ≤ 3%, and never count as multibagger picks in the Top 5 unless their base upside beats the small-cap candidates.
+- **2026-10-22 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit rate fell from 0.43 to 0.24 (n = 54, 0 matured, all ≤ 7 days, measured through the 21 Oct sell-off when Nifty fell ~2% and small caps ~3%). Conviction factor at weight 0.2 → −1 pt on his main picks (Keltech). No rule change until 10 calls mature (from 14 Nov 2026).
+- **2026-10-22 – Video-figure accuracy.** Evidence: in the 3 pick videos of 21 Oct, results-table numbers he read out were right (Groww ₹1,501 Cr / ₹725 Cr; Bajaj Finance ₹6,367 Cr; Tatva ₹217 Cr / ₹21 Cr; Keltech ₹190 Cr plant / ₹135 Cr loan), but qualitative claims were not (Keltech "at an all-time high" – it is 18% below its ₹14,800 high). Sumit Research Short on Paras Healthcare had caption slips (221 vs 2,211 beds; "₹75,000 Cr" m-cap vs ≈ ₹7,000 Cr). How it changes calls: keep using his numbers only after a filing check; ignore "rock / can't fall / all-time high" claims entirely in the score.
