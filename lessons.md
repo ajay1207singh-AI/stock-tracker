@@ -12,7 +12,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 | Avoided high-P/E (>80x) names: 13/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 9/9 fell or lagged the index | yes | Very low | 0 / 9 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
-| Watchlist: 6/6 have fallen since the call | yes | Very low | 0 / 6 | 2026-10-19 |
+| Watchlist: 5/6 have fallen since the call | yes | Very low | 0 / 6 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 3/3 fell or lagged the index | yes | Very low | 0 / 3 | 2026-10-21 |
 | Avoided SME / illiquid names: 2/3 fell or lagged the index | yes | Very low | 0 / 3 | 2026-10-21 |
 
