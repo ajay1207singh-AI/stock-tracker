@@ -1,13 +1,13 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-10-23. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-10-24. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 38/41 fell or lagged the index | yes | Very low | 0 / 41 | 2026-10-19 |
-| Buys: 15/33 are beating their index | no | Very low | 0 / 33 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 38/42 fell or lagged the index | yes | Very low | 0 / 42 | 2026-10-19 |
+| Buys: 16/33 are beating their index | no | Very low | 0 / 33 | 2026-10-19 |
 | Avoided semiconductor-theme names: 15/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
 | Avoided high-P/E (>80x) names: 13/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 9/9 fell or lagged the index | yes | Very low | 0 / 9 | 2026-10-19 |
@@ -81,3 +81,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - **2026-10-23 – Governance vote as a red flag.** Evidence: SPEL Semiconductor AGM (14 Sep 2026) – public shareholders rejected redemption of promoter-held preference shares (₹12.95 Cr) and debentures (₹7 Cr) while the company has a ~₹3 Cr net worth and ~₹0 quarterly sales. Sample 1. How it changes calls: a failed related-party resolution counts as a governance flag that keeps a stock at Avoid regardless of theme fit (SPEL: semiconductor theme 0.9, verdict Avoid conf 86).
 - **2026-10-23 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit rate 0.38 (n = 66, 0 matured, weight 0.2), up from 0.24 on 22 Oct as small caps bounced. No rule change until 10 calls mature (from 14 Nov 2026).
 - **2026-10-23 – Sumit Research data-list Shorts.** Evidence: Oxyh-PPNBkc ("stocks down 50%+ but still expensive": Inox Wind, KPIT, RVNL, CE Info, Cohance, Intellect, Jupiter Wagons, PB Fintech, Syngene, Vishal Mega Mart – labelled "not investment advice") and mLR_Z6rUQfY (Vikas Khemani on judging management). How it changes calls: data-list and education Shorts are logged but never create tracker rows; a name from them is analysed only if a later video gives a reason to buy.
+- **2026-10-24 – Check the promoter pledge from the shareholding filing, not only Screener's cons list.** Evidence: Transformers & Rectifiers (TARIL) showed no pledge flag on Screener, but the Sep 2026 shareholding (Trendlyne) shows 21.84% of promoter holding pledged (4.22 Cr shares, all by Jitendra Mamtora). Without it the engine rated TARIL Buy on dip at ₹289 (conf 91); with it the hard pledge gate (≥ 20%) forces Avoid. Spot check of the current Top 5: Deep Industries, Dynamic Cables, Cemindia and Onward show 0% pledge (Sep 2026 filings); Birlasoft was not confirmed. Sample 1 miss in 6 checked. How it changes calls: every new name gets a pledge check from the latest quarterly shareholding (Trendlyne/BSE). Re-check all Buy-rated names before the 14 Nov review.
+- **2026-10-24 – Advanced Level Investment macro / marketing days.** Evidence: all 4 videos of 23 Oct (a −3% small-cap day, Brent ~$114) were sell-off commentary, IPO-trap warnings or fallen-darling lists with course promotion. Only one stock (TARIL) was discussed with numbers, and he said buying now risks losses. He also misread two figures: crude at "$144" (actual ~$114–115) and TARIL profit "₹94 Cr" (actual ₹81 Cr consolidated). Sample: 4 of 4 videos in one day. How it changes calls: names in warning and breadth lists are logged as EXTRA or no-pick, not given tracker rows. A stock he discusses with results but tells viewers not to buy enters at conviction 0.25.
+- **2026-10-24 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit rate 0.32 (n = 68, 0 matured, weight 0.2), down from 0.38 on 23 Oct through the 23 Oct small-cap sell-off (Nifty Smallcap 100 −2.9%, worst week in 20 months: small caps −7.3%). No rule change until 10 calls mature (from 14 Nov 2026).
+- **2026-10-24 – QIP dilution must be applied to per-share targets.** Evidence: Cemindia Projects issued 1.26 Cr shares in a ₹1,400 Cr QIP at ₹1,108 (19 Oct 2026). Screener's EPS is pre-issue, so engine targets were ~7% too high. Sample 1. How it changes calls: after any QIP, rights issue or preferential issue, cut the targets by new shares ÷ old shares until the next quarterly EPS. Cemindia stays a Strong Buy (base ₹1,439, +23%), with confidence trimmed to 80.
