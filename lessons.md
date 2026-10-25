@@ -1,19 +1,19 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-10-24. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-10-25. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 38/42 fell or lagged the index | yes | Very low | 0 / 42 | 2026-10-19 |
-| Buys: 16/33 are beating their index | no | Very low | 0 / 33 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 38/50 fell or lagged the index | yes | Very low | 0 / 50 | 2026-10-19 |
+| Buys: 16/37 are beating their index | no | Very low | 0 / 37 | 2026-10-19 |
 | Avoided semiconductor-theme names: 15/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 13/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 9/9 fell or lagged the index | yes | Very low | 0 / 9 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 6/8 fell or lagged the index | yes | Very low | 0 / 8 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 13/16 fell or lagged the index | yes | Very low | 0 / 16 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 9/12 fell or lagged the index | yes | Very low | 0 / 12 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 6/11 fell or lagged the index | yes | Very low | 0 / 11 | 2026-10-19 |
 | Watchlist: 5/6 have fallen since the call | yes | Very low | 0 / 6 | 2026-10-19 |
-| Avoided large caps (≥ ₹1 lakh Cr): 3/3 fell or lagged the index | yes | Very low | 0 / 3 | 2026-10-21 |
+| Avoided large caps (≥ ₹1 lakh Cr): 3/4 fell or lagged the index | yes | Very low | 0 / 4 | 2026-10-21 |
 | Avoided SME / illiquid names: 2/3 fell or lagged the index | yes | Very low | 0 / 3 | 2026-10-21 |
 
 ## Revision log (lessons the data contradicted)
@@ -85,3 +85,8 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - **2026-10-24 – Advanced Level Investment macro / marketing days.** Evidence: all 4 videos of 23 Oct (a −3% small-cap day, Brent ~$114) were sell-off commentary, IPO-trap warnings or fallen-darling lists with course promotion. Only one stock (TARIL) was discussed with numbers, and he said buying now risks losses. He also misread two figures: crude at "$144" (actual ~$114–115) and TARIL profit "₹94 Cr" (actual ₹81 Cr consolidated). Sample: 4 of 4 videos in one day. How it changes calls: names in warning and breadth lists are logged as EXTRA or no-pick, not given tracker rows. A stock he discusses with results but tells viewers not to buy enters at conviction 0.25.
 - **2026-10-24 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit rate 0.32 (n = 68, 0 matured, weight 0.2), down from 0.38 on 23 Oct through the 23 Oct small-cap sell-off (Nifty Smallcap 100 −2.9%, worst week in 20 months: small caps −7.3%). No rule change until 10 calls mature (from 14 Nov 2026).
 - **2026-10-24 – QIP dilution must be applied to per-share targets.** Evidence: Cemindia Projects issued 1.26 Cr shares in a ₹1,400 Cr QIP at ₹1,108 (19 Oct 2026). Screener's EPS is pre-issue, so engine targets were ~7% too high. Sample 1. How it changes calls: after any QIP, rights issue or preferential issue, cut the targets by new shares ÷ old shares until the next quarterly EPS. Cemindia stays a Strong Buy (base ₹1,439, +23%), with confidence trimmed to 80.
+- **2026-10-25 – ALI "bottom micro-cap" lists are mostly gate failures; check operating profit vs other income.** Evidence: of the 7 new names in aVPNM4MZT-I and cViby0c9sU0 (24 Oct), 6 are Avoid. Advance Multitech, PG Foils and Brooks Laboratories showed profits built mainly on other income with near-zero operating profit. Comfort Intech has 48.7% of promoter holding pledged. Flex Foods has D/E ~34. Only BCL Industries passed (Buy on dip). Several of the video's figures were wrong: Apollo Finvest "−68%" (actually +2% in a year), Onward "₹700→200" (price ~₹436), BCL "FMCG + real estate" (really edible oil + distillery). Sample 7 names, 1 day – weak. How it changes calls: list names from these videos enter at conviction 0.5 and must show operating profit (EBIT before other income) > 0 in at least 3 of the last 4 quarters before any Buy.
+- **2026-10-25 – Relisted circuit stocks plus deep-discount warrants = operator flag.** Evidence: Advance Multitech went ~₹50→₹275 in a month on upper circuits after relisting, with quarterly sales of ₹0–0.4 Cr, while the AGM approved ₹40 Cr of warrants at ₹40 to non-promoters (~85% below market). Sample 1. How it changes calls: a warrant or preferential price more than 50% below market on a stock that rose 3x+ in 3 months is a governance red flag → Avoid regardless of the video's thesis.
+- **2026-10-25 – A strong forward pillar does not override valuation above ~80x P/E.** Evidence: Solar Industries scores 0.85 on the forward pillar (order book ₹21,350 Cr, defence revenue +123%), which would lift it to Buy, but at P/E 83 even run-rate EPS +30% at 50x gives only ~+11%. Same treatment as Hitachi Energy (P/E ~105) and Tata Technologies. Sample 3 – weak. How it changes calls: names with P/E > 80 are excluded from the forward lift unless the 12–18 month base target is ≥ +20%.
+- **2026-10-25 – Results within a week: buy half before, half after.** Evidence: Privi Speciality (Q2 on 29 Oct) and the Newgen precedent (22 Oct). Sample 2. How it changes calls: a Buy whose results fall within 7 days gets a first tranche of half the size, and the second tranche only if the results do not break the thesis.
+- **2026-10-25 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit 0.32 (n = 69, 0 matured, weight 0.2), unchanged. No rule change until 10 calls mature (from 14 Nov 2026).
