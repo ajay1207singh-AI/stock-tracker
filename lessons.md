@@ -6,13 +6,13 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 41/59 fell or lagged the index | yes | Very low | 0 / 59 | 2026-10-19 |
-| Buys: 17/45 are beating their index | no | Very low | 0 / 45 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 11/23 fell or lagged the index | no | Very low | 0 / 23 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 10/20 fell or lagged the index | no | Very low | 0 / 20 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 42/59 fell or lagged the index | yes | Very low | 0 / 59 | 2026-10-19 |
+| Buys: 18/45 are beating their index | no | Very low | 0 / 45 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 12/23 fell or lagged the index | yes | Very low | 0 / 23 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 10/19 fell or lagged the index | yes | Very low | 0 / 19 | 2026-10-19 |
 | Avoided semiconductor-theme names: 9/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 8/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
-| Watchlist: 6/10 have fallen since the call | yes | Very low | 0 / 10 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 9/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
+| Watchlist: 7/10 have fallen since the call | yes | Very low | 0 / 10 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 2/5 fell or lagged the index | no | Very low | 0 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 1/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
 
@@ -65,6 +65,8 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-27: **watch:waiting** – was “Watchlist: 5/10 have fallen since the call (pattern did not hold)”, now “Watchlist: 7/10 have fallen since the call (pattern holds)” (confidence Very low)
 - 2026-10-27: **avoid:penny stocks (< ₹100)** – was “Avoided penny stocks (< ₹100): 12/23 fell or lagged the index (pattern held)”, now “Avoided penny stocks (< ₹100): 10/23 fell or lagged the index (pattern does not hold)” (confidence Very low)
 - 2026-10-27: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 11/20 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 10/20 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-27: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 10/20 fell or lagged the index (pattern did not hold)”, now “Avoided high-P/E (>80x) names: 10/19 fell or lagged the index (pattern holds)” (confidence Very low)
+- 2026-10-27: **avoid:penny stocks (< ₹100)** – was “Avoided penny stocks (< ₹100): 11/23 fell or lagged the index (pattern did not hold)”, now “Avoided penny stocks (< ₹100): 12/23 fell or lagged the index (pattern holds)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
