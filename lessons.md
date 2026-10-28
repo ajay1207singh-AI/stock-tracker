@@ -6,8 +6,8 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 35/59 fell or lagged the index | yes | Very low | 0 / 59 | 2026-10-19 |
-| Buys: 24/46 are beating their index | yes | Very low | 0 / 46 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 38/59 fell or lagged the index | yes | Very low | 0 / 59 | 2026-10-19 |
+| Buys: 21/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 10/24 fell or lagged the index | no | Very low | 0 / 24 | 2026-10-19 |
 | Avoided high-P/E (>80x) names: 10/20 fell or lagged the index | no | Very low | 0 / 20 | 2026-10-19 |
 | Avoided semiconductor-theme names: 10/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
@@ -73,6 +73,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-28: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 10/19 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 10/20 fell or lagged the index (pattern does not hold)” (confidence Very low)
 - 2026-10-28: **avoid:penny stocks (< ₹100)** – was “Avoided penny stocks (< ₹100): 13/24 fell or lagged the index (pattern held)”, now “Avoided penny stocks (< ₹100): 10/24 fell or lagged the index (pattern does not hold)” (confidence Very low)
 - 2026-10-28: **buy:beat** – was “Buys: 18/46 are beating their index (pattern did not hold)”, now “Buys: 24/46 are beating their index (pattern holds)” (confidence Very low)
+- 2026-10-28: **buy:beat** – was “Buys: 24/46 are beating their index (pattern held)”, now “Buys: 21/46 are beating their index (pattern does not hold)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
