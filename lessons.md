@@ -6,9 +6,9 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 38/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 40/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
 | Buys: 21/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 10/27 fell or lagged the index | no | Very low | 0 / 27 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 11/27 fell or lagged the index | no | Very low | 0 / 27 | 2026-10-19 |
 | Avoided high-P/E (>80x) names: 9/20 fell or lagged the index | no | Very low | 0 / 20 | 2026-10-19 |
 | Avoided semiconductor-theme names: 9/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 10/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
