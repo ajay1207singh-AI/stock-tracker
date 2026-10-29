@@ -6,13 +6,13 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 41/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
-| Buys: 18/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 11/27 fell or lagged the index | no | Very low | 0 / 27 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 39/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
+| Buys: 21/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 12/27 fell or lagged the index | no | Very low | 0 / 27 | 2026-10-19 |
 | Avoided high-P/E (>80x) names: 9/19 fell or lagged the index | no | Very low | 0 / 19 | 2026-10-19 |
 | Avoided semiconductor-theme names: 11/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 9/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Watchlist: 6/10 have fallen since the call | yes | Very low | 0 / 10 | 2026-10-19 |
+| Watchlist: 5/10 have fallen since the call | no | Very low | 0 / 10 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 2/5 fell or lagged the index | no | Very low | 0 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 1/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
 
@@ -83,6 +83,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-28: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided loss-making names (no P/E): 9/16 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-10-28: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 9/16 fell or lagged the index (pattern held)”, now “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern does not hold)” (confidence Very low)
 - 2026-10-29: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided loss-making names (no P/E): 9/17 fell or lagged the index (pattern holds)” (confidence Very low)
+- 2026-10-29: **watch:waiting** – was “Watchlist: 6/10 have fallen since the call (pattern held)”, now “Watchlist: 5/10 have fallen since the call (pattern does not hold)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
