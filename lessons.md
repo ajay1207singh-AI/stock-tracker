@@ -1,6 +1,6 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-10-28. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-10-29. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
@@ -9,9 +9,9 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 | Avoided YouTuber daily-video tips: 41/59 fell or lagged the index | yes | Very low | 0 / 59 | 2026-10-19 |
 | Buys: 18/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 11/24 fell or lagged the index | no | Very low | 0 / 24 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 10/20 fell or lagged the index | no | Very low | 0 / 20 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 9/18 fell or lagged the index | no | Very low | 0 / 18 | 2026-10-19 |
 | Avoided semiconductor-theme names: 11/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 8/16 fell or lagged the index | no | Very low | 0 / 16 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 9/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
 | Watchlist: 6/10 have fallen since the call | yes | Very low | 0 / 10 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 2/5 fell or lagged the index | no | Very low | 0 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 1/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
@@ -82,6 +82,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-10-28: **watch:waiting** – was “Watchlist: 4/10 have fallen since the call (pattern did not hold)”, now “Watchlist: 6/10 have fallen since the call (pattern holds)” (confidence Very low)
 - 2026-10-28: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided loss-making names (no P/E): 9/16 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-10-28: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 9/16 fell or lagged the index (pattern held)”, now “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern does not hold)” (confidence Very low)
+- 2026-10-29: **avoid:loss-making names (no P/E)** – was “Avoided loss-making names (no P/E): 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided loss-making names (no P/E): 9/17 fell or lagged the index (pattern holds)” (confidence Very low)
 
 ## Analyst notes (dated, carried forward)
 
@@ -133,3 +134,6 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - **2026-10-25 – A strong forward pillar does not override valuation above ~80x P/E.** Evidence: Solar Industries scores 0.85 on the forward pillar (order book ₹21,350 Cr, defence revenue +123%), which would lift it to Buy, but at P/E 83 even run-rate EPS +30% at 50x gives only ~+11%. Same treatment as Hitachi Energy (P/E ~105) and Tata Technologies. Sample 3 – weak. How it changes calls: names with P/E > 80 are excluded from the forward lift unless the 12–18 month base target is ≥ +20%.
 - **2026-10-25 – Results within a week: buy half before, half after.** Evidence: Privi Speciality (Q2 on 29 Oct) and the Newgen precedent (22 Oct). Sample 2. How it changes calls: a Buy whose results fall within 7 days gets a first tranche of half the size, and the second tranche only if the results do not break the thesis.
 - **2026-10-25 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit 0.32 (n = 69, 0 matured, weight 0.2), unchanged. No rule change until 10 calls mature (from 14 Nov 2026).
+- **2026-10-29 – "Promoter raised stake" and "preferential funding" claims must be checked against the actual filing.** Evidence: Affordable Robotic & Automation's "promoters raised 41%→45%" came from converting a ₹21 Cr promoter loan into warrants at ₹192 (17 Jul 2026 board, 19 Aug 2026 postal ballot), not market buying; Sakuma Exports' "₹100+ Cr to insiders" is a ₹107.9 Cr issue to nine non-promoter allottees, still awaiting a 21 Nov 2026 EGM, adding ~41% more shares. Sample 2, 1 day – weak. How it changes calls: a stake rise via warrants/loan conversion earns no "insider buying" credit, and a pending preferential issue is treated as dilution (cut per-share targets) and not as a catalyst.
+- **2026-10-29 – Advanced Level Investment marketing day (again).** Evidence: of 5 videos on 28 Oct, 2 had no investable pick (pharma momentum list + Shukra past-win brag; US space data centres), 1 was a past-win "Titan-like shares" list, and both single-stock videos (Sakuma Exports ₹256 Cr, Affordable Robotic ₹191 Cr) are nano-caps that fail the ₹300 Cr size gate. All 4 new names rated Avoid. Sample 5 videos / 4 names. How it changes calls: no rule change – confirms the 24 Oct rule (breadth/past-win lists → no-pick or conviction 0.25).
+- **2026-10-29 – Channel record update (very weak evidence).** Advanced Level Investment provisional alpha-hit still ~0.37 (0 matured, weight 0.2). No rule change until 10 calls mature (from 14 Nov 2026).
