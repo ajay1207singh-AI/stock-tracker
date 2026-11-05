@@ -6,14 +6,14 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 35/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
-| Buys: 13/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 38/63 fell or lagged the index | yes | Very low | 0 / 63 | 2026-10-19 |
+| Buys: 12/46 are beating their index | no | Very low | 0 / 46 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 11/27 fell or lagged the index | no | Very low | 0 / 27 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 11/18 fell or lagged the index | yes | Very low | 0 / 18 | 2026-10-19 |
-| Avoided semiconductor-theme names: 11/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 9/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 12/18 fell or lagged the index | yes | Very low | 0 / 18 | 2026-10-19 |
+| Avoided semiconductor-theme names: 9/17 fell or lagged the index | yes | Very low | 0 / 17 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 8/15 fell or lagged the index | yes | Very low | 0 / 15 | 2026-10-19 |
 | Watchlist: 5/10 have fallen since the call | no | Very low | 0 / 10 | 2026-10-19 |
-| Avoided large caps (≥ ₹1 lakh Cr): 4/5 fell or lagged the index | yes | Very low | 0 / 5 | 2026-10-21 |
+| Avoided large caps (≥ ₹1 lakh Cr): 5/5 fell or lagged the index | yes | Very low | 0 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 2/4 fell or lagged the index | no | Very low | 0 / 4 | 2026-10-21 |
 
 ## Revision log (lessons the data contradicted)
