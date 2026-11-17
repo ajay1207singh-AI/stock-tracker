@@ -8,7 +8,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 |---|---|---|---|---|
 | Avoided semiconductor-theme names: 13/17 fell or lagged the index | yes | Medium | 9 / 17 | 2026-10-19 |
 | Avoided loss-making names (no P/E): 13/18 fell or lagged the index | yes | Medium | 7 / 18 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 9/16 fell or lagged the index | yes | Medium | 6 / 16 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 8/16 fell or lagged the index | no | Medium | 6 / 16 | 2026-10-19 |
 | Avoided YouTuber daily-video tips: 38/63 fell or lagged the index | yes | Low | 4 / 63 | 2026-10-19 |
 | Avoided penny stocks (< ₹100): 13/27 fell or lagged the index | no | Low | 3 / 27 | 2026-10-19 |
 | Watchlist: 5/10 have fallen since the call | no | Low | 2 / 10 | 2026-10-19 |
@@ -121,6 +121,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-11-11: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided high-P/E (>80x) names: 9/16 fell or lagged the index (pattern holds)” (confidence Very low)
 - 2026-11-13: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 9/16 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 8/17 fell or lagged the index (pattern does not hold)” (confidence Very low)
 - 2026-11-17: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided high-P/E (>80x) names: 9/16 fell or lagged the index (pattern holds)” (confidence Medium)
+- 2026-11-17: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 9/16 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 8/16 fell or lagged the index (pattern does not hold)” (confidence Medium)
 
 ## Analyst notes (dated, carried forward)
 
