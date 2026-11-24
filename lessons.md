@@ -1,19 +1,19 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-11-23. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-11-24. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 40/63 fell or lagged the index | yes | High | 41 / 63 | 2026-10-19 |
-| Buys: 12/46 are beating their index | no | High | 33 / 46 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 40/63 fell or lagged the index | yes | High | 48 / 63 | 2026-10-19 |
+| Buys: 12/46 are beating their index | no | High | 37 / 46 | 2026-10-19 |
 | Avoided semiconductor-theme names: 14/17 fell or lagged the index | yes | High | 17 / 17 | 2026-10-19 |
 | Avoided high-P/E (>80x) names: 8/15 fell or lagged the index | yes | Medium | 13 / 15 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 14/18 fell or lagged the index | yes | Medium | 10 / 18 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 14/27 fell or lagged the index | yes | Medium | 9 / 27 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 14/27 fell or lagged the index | yes | Medium | 12 / 27 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 14/18 fell or lagged the index | yes | Medium | 12 / 18 | 2026-10-19 |
 | Watchlist: 5/10 have fallen since the call | no | Medium | 6 / 10 | 2026-10-19 |
-| Avoided large caps (≥ ₹1 lakh Cr): 5/5 fell or lagged the index | yes | Low | 3 / 5 | 2026-10-21 |
+| Avoided large caps (≥ ₹1 lakh Cr): 5/5 fell or lagged the index | yes | Low | 4 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 3/4 fell or lagged the index | yes | Low | 3 / 4 | 2026-10-21 |
 
 ## Revision log (lessons the data contradicted)
