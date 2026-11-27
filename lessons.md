@@ -1,17 +1,17 @@
 # Lessons – stock tracker scorecard
 
-_Last revised 2026-11-26. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
+_Last revised 2026-11-27. This is a rules-based scorecard, not a prediction model. A lesson only means the calls so far behaved this way._
 
 Confidence depends on how many calls in the group have matured past 30 days: Very low (0), Low (1–4), Medium (5–14), High (15+).
 
 | Lesson | Holds? | Confidence | Matured / n | First seen |
 |---|---|---|---|---|
-| Avoided YouTuber daily-video tips: 39/63 fell or lagged the index | yes | High | 58 / 63 | 2026-10-19 |
-| Buys: 12/46 are beating their index | no | High | 45 / 46 | 2026-10-19 |
-| Avoided penny stocks (< ₹100): 12/27 fell or lagged the index | no | High | 23 / 27 | 2026-10-19 |
-| Avoided loss-making names (no P/E): 14/18 fell or lagged the index | yes | High | 17 / 18 | 2026-10-19 |
+| Avoided YouTuber daily-video tips: 38/63 fell or lagged the index | yes | High | 59 / 63 | 2026-10-19 |
+| Buys: 13/46 are beating their index | no | High | 46 / 46 | 2026-10-19 |
+| Avoided penny stocks (< ₹100): 12/27 fell or lagged the index | no | High | 24 / 27 | 2026-10-19 |
+| Avoided loss-making names (no P/E): 14/18 fell or lagged the index | yes | High | 18 / 18 | 2026-10-19 |
 | Avoided semiconductor-theme names: 14/17 fell or lagged the index | yes | High | 17 / 17 | 2026-10-19 |
-| Avoided high-P/E (>80x) names: 8/16 fell or lagged the index | no | High | 15 / 16 | 2026-10-19 |
+| Avoided high-P/E (>80x) names: 9/17 fell or lagged the index | yes | High | 16 / 17 | 2026-10-19 |
 | Watchlist: 5/10 have fallen since the call | no | Medium | 10 / 10 | 2026-10-19 |
 | Avoided large caps (≥ ₹1 lakh Cr): 5/5 fell or lagged the index | yes | Medium | 5 / 5 | 2026-10-21 |
 | Avoided SME / illiquid names: 3/4 fell or lagged the index | yes | Low | 4 / 4 | 2026-10-21 |
@@ -132,6 +132,7 @@ Confidence depends on how many calls in the group have matured past 30 days: Ver
 - 2026-11-25: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 7/15 fell or lagged the index (pattern did not hold)”, now “Avoided high-P/E (>80x) names: 8/15 fell or lagged the index (pattern holds)” (confidence Medium)
 - 2026-11-25: **avoid:penny stocks (< ₹100)** – was “Avoided penny stocks (< ₹100): 14/27 fell or lagged the index (pattern held)”, now “Avoided penny stocks (< ₹100): 13/27 fell or lagged the index (pattern does not hold)” (confidence High)
 - 2026-11-26: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 8/15 fell or lagged the index (pattern held)”, now “Avoided high-P/E (>80x) names: 8/16 fell or lagged the index (pattern does not hold)” (confidence High)
+- 2026-11-27: **avoid:high-P/E (>80x) names** – was “Avoided high-P/E (>80x) names: 8/16 fell or lagged the index (pattern did not hold)”, now “Avoided high-P/E (>80x) names: 9/17 fell or lagged the index (pattern holds)” (confidence High)
 
 ## Analyst notes (dated, carried forward)
 
